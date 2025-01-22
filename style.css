@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Clean and modern font */
+    margin: 0;
+    color: #333333; /* Neutral text color */
+    background: linear-gradient(
+        135deg,
+        #ffffff, /* White */
+        #ffebeb, /* Faint red */
+        #87ceeb, /* Light blue */
+        #ffd1dc, /* Soft pink */
+        #e6f2ff  /* Pale sky blue */
+    );
+    background-size: 300% 300%; /* Larger gradient for smooth transitions */
+    animation: gradientMove 15s ease infinite; /* Moving gradient effect */
+    line-height: 1.8;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Animation for gradient movement */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    color: #333333;
+    padding: 60px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Depth effect */
+    text-align: center;
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #004aad; /* Deep blue for contrast */
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: 10px;
+    color: #666666; /* Neutral gray */
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+    background: rgba(255, 255, 255, 0.9); /* Very light background */
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#about .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #ffebeb; /* Faint red border */
+    margin: 20px auto;
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #333333; /* Dark text for readability */
+}
+
+/* Skills Section */
+#skills {
+    padding: 60px 0;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#skills li {
+    background: linear-gradient(145deg, #87ceeb, #ffd1dc); /* Blue to pink gradient */
+    color: #ffffff;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#skills li:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 0;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 15px;
+    margin: 30px auto;
+    color: #333333;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+#projects .project {
+    padding: 20px;
+    margin-bottom: 30px;
+    background: linear-gradient(145deg, #ffebeb, #e6f2ff); /* Faint red to pale blue */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#projects .project h3 {
+    color: #333333;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+#projects .project p {
+    color: #666666;
+    font-size: 1.1em;
+}
+
+#projects .project:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Resume Section */
+#resume a {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 20px auto;
+    background: #004aad; /* Deep blue */
+    color: #ffffff;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#resume a:hover {
+    background: #ff4d4d; /* Bright red for hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: #333333;
+}
+
+#contact a {
+    color: #004aad; /* Deep blue */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #ff4d4d; /* Bright red hover */
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #333333; /* Neutral dark gray */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+}
